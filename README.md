@@ -1,4 +1,4 @@
-# bornbeenbound-api
+# bbb-api
 API for Born Been &amp; Bound
 
 #Setup 
