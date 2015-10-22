@@ -5,7 +5,6 @@ var watchify    = require('watchify');
 var nodemon     = require('gulp-nodemon');
 var eslint      = require('gulp-eslint');
 var runSequence = require('run-sequence');
-var forever = require('forever-monitor');
 
 var path = {
     development: {
@@ -65,8 +64,7 @@ gulp.task('start', function (cb) {
         '_lint-js',
         '_watch',
         function () {
-            //nodemon(options.nodemon);
-            new forever.Monitor(options.nodemon).start();
+            nodemon(options.nodemon);
             cb();
         }
     );
