@@ -1,7 +1,7 @@
 {
   "projectName": "bbb-api",
   "ip": "127.0.0.1",
-  "port": 8887,
-  "mongoMarkers": "mongodb://localhost/markers",
-  "mongoSessions": "mongodb://localhost/sessions"
+  "port": 11565,
+  "mongoMarkers": "mongodb://localhost:10377/markers",
+  "mongoSessions": "mongodb://localhost:10377/sessions"
 }
